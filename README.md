@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 
 Clone the repository:
-bashgit clone https://github.com/golbargfatemi/react-calculator.git
+git clone https://github.com/golbargfatemi/react-calculator.git
 
 
 Install dependencies:
@@ -18,7 +18,13 @@ npm install
 Start the development server:
 npm run dev
 
+Build and start the Docker container:
+docker-compose up --build
+
 Open your browser and navigate to http://localhost:5173
 
-Build and start the Docker container:
-bashdocker-compose up --build
+This project uses GitHub Actions for continuous integration and deployment:
+
+On every push to the Master branch, the CI/CD pipeline is triggered
+The application is built and deployed to GitHub Pages
+The deployment status can be tracked via the GitHub Actions tab
